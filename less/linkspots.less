@@ -1,0 +1,89 @@
+// This file is part of Moodle - http://moodle.org/
+//
+// Moodle is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// Moodle is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY, without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+
+/**
+ * Theme glostest theme styles less file.
+ *
+ * @package    theme_glostest
+ * @copyright  2016 RM Oelmann, University of Gloucestershire (roelmann@glos.ac.uk)
+ * @credits    Bas Brands - Bootstrap
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+
+/* Link spots.
+ * ----------- */
+.linkspots-block {
+    border:1px solid;
+    box-shadow: 3px 2px 6px rgba(0, 0, 0, 0.33);
+    width:200px;
+    height:200px;
+    border-radius:100px;
+    margin:15px auto;
+    img.linkspotbkground {
+        width:198px;
+        height:99px;
+        border-radius:99px 99px 0 0;
+        border-bottom:1px solid;
+    }
+    .linkspots-icon {
+        background-color:@white;
+        width:60px;
+        height:60px;
+        margin:-30px auto auto 69px;
+        position:absolute;
+        border:1px solid;
+        box-shadow: 2px 1px 3px rgba(0, 0, 0, 0.33);
+        border-radius:30px;
+        text-align:center;
+        padding-top:6px;
+        img.linkspotcentral {
+            width:58px;
+            height:58px;
+            border-radius:29px;
+            margin-top:-6px;
+        }
+    }
+    h4 {
+        text-align:center;
+        margin-top:35px;
+    }
+}
+.linkspots-wrapper {
+    a:hover,
+    a:focus {
+        text-decoration:none;
+        h4 {
+            text-shadow:1px 1px @gray-light;
+        }
+    }
+}
+#page-linkspots,
+#page-linkspots:after {
+    clear:both;
+}
+#page-linkspots.flexcontainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: stretch;
+}
+
+#page-linkspots.flexcontainer .flexcontent {
+    order: 3;
+    flex: 1 1 auto;
+    align-self: stretch;
+}

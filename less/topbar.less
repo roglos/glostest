@@ -1,0 +1,132 @@
+// This file is part of Moodle - http://moodle.org/
+//
+// Moodle is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// Moodle is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY, without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+
+/**
+ * Theme glostest theme styles less file.
+ *
+ * @package    theme_glostest
+ * @copyright  2016 RM Oelmann, University of Gloucestershire (roelmann@glos.ac.uk)
+ * @credits    Bas Brands - Bootstrap
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+
+/* Custom Menu top bar.
+ * -------------------- */
+.navbar-fixed-top {
+    background:url([[pix:theme|colourbars]]) repeat-x;
+    padding-top:6px;
+    padding-right:20px;
+    background-color:@gray-base;
+    margin-bottom:0;
+    border-radius:0;
+    border:none;
+    border-color:@gray-base;
+}
+.navbar-header.pull-left {
+    display:none;
+}
+.navbar-brand {
+    background:none;
+    width:60px;
+    height:29px;
+    .sitename {
+        display:none;
+    }
+}
+.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+    margin-left:-10px;
+    margin-top:0;
+}
+.menubar {
+    .avatar.current {
+        img {
+            position:fixed;
+            right:30px;
+            height:80px;
+            width:80px;
+            border-radius:40px;
+            border:2px solid @brand-stripe-gold;
+            box-shadow: 2px 1px 3px rgba(0, 0, 0, 0.33);
+            background-color:@white;
+        }
+    }
+}
+.jsenabled .usermenu .moodle-actionmenu {
+    .toggle-display {
+        &.textmenu {
+            .usertext {
+                margin-right:110px;
+                margin-top:8px;
+            }
+        }
+        .caret {
+            display:none;
+        }
+    }
+    &.show {
+        .menu {
+            &.align-tr-br {
+                margin-top:6px;
+                right:-6px;
+            }
+        }
+    }
+}
+.usermenu span.login {
+    color:@white;
+}
+.moodle-actionmenu.show[data-enhanced] .menu > li > a {
+    color: @link-color;
+}
+.jsenabled .usermenu .moodle-actionmenu.show .menu a:focus,
+.jsenabled .usermenu .moodle-actionmenu.show .menu a:hover {
+    background-color:transparent;
+    background-image:none;
+    color:@link-hover-color;
+    text-decoration:@link-hover-decoration;
+}
+
+.navbar-nav > li > .dropdown-menu:before {
+    border-bottom: 7px solid @white;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: -7px;
+}
+.dropdown-menu > li > a {
+    color: @link-color;
+}
+.dropdown-menu > li > a:focus,
+.dropdown-menu > li > a:hover {
+    background-color:transparent;
+    background-image:none;
+    color:@link-hover-color;
+    text-decoration:@link-hover-decoration;
+}
+.dropdown-submenu:hover > a {
+    color:@link-hover-color;
+    text-decoration:@link-hover-decoration;
+}
+.dropdown-submenu > a::after {
+    border-color: transparent transparent transparent @link-color;
+}
+.dropdown-submenu:hover > a::after {
+    border-color: transparent transparent transparent @link-hover-color;
+}
+.dropdown-submenu > .dropdown-menu {
+    border-radius:@border-radius-base;
+}

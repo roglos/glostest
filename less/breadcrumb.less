@@ -1,0 +1,71 @@
+// This file is part of Moodle - http://moodle.org/
+//
+// Moodle is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// Moodle is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY, without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+
+/**
+ * Theme glostest theme styles less file.
+ *
+ * @package    theme_glostest
+ * @copyright  2016 RM Oelmann, University of Gloucestershire (roelmann@glos.ac.uk)
+ * @credits    Bas Brands - Bootstrap
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+
+/* Navbar - breadcrumbs.
+ * --------------------- */
+#page-navbar {
+    background:@brand-stripe-teal;
+}
+.breadcrumb-nav .breadcrumb {
+    background:@brand-stripe-teal;
+    padding-top:12px;
+    padding-bottom:0;
+    color:@white;
+        a {
+            color:@white;
+            &:hover {
+                color:@white
+            }
+        }
+}
+.has_dock .breadcrumb-nav {
+    margin-left:35px;
+}
+.breadcrumb-button {
+    margin-right:30px;
+    margin-bottom:2px;
+    margin-top:8px;
+    .btn-success {
+        margin-bottom:5px;
+        font-weight:700;
+    }
+}
+.breadcrumb-button .singlebutton div {
+    margin-bottom:3px;
+    input[type="submit"] {
+        background-color:@brand-stripe-green;
+        background-image:none;
+        color:@white;
+        font-weight:700;
+    }
+}
+
+.breadcrumb > li + li::before {
+    color: #ccc;
+    content: ">";
+    padding: 0 5px;
+}
+.breadcrumb li a span {
+    font-weight:700;
+}

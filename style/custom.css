@@ -1,0 +1,99 @@
+// This file is part of Moodle - http://moodle.org/
+//
+// Moodle is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// at your option any later version.
+//
+// Moodle is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY, without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+
+/**
+ * Theme glostest css custom settings file.
+ *
+ * @package    theme_glostest
+ * @copyright  2016 RM Oelmann, University of Gloucestershire (roelmann@glos.ac.uk)
+ * @credits    Bas Brands - Bootstrap
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+
+body {
+    background:#fff;
+}
+
+.linkspot1 .linkspots-block,
+.linkspot1 .linkspots-icon,
+.linkspot1 img {
+    border-color:[[setting:linkspots1colour]];
+}
+.linkspot1 h4 {
+    color:[[setting:linkspots1colour]];
+}
+
+.linkspot2 .linkspots-block,
+.linkspot2 .linkspots-icon,
+.linkspot2 img {
+    border-color:[[setting:linkspots2colour]];
+}
+.linkspot2 h4 {
+    color:[[setting:linkspots2colour]];
+}
+.linkspot3 .linkspots-block,
+.linkspot3 .linkspots-icon,
+.linkspot3 img {
+    border-color:[[setting:linkspots3colour]];
+}
+.linkspot3 h4 {
+    color:[[setting:linkspots3colour]];
+}
+.linkspot4 .linkspots-block,
+.linkspot4 .linkspots-icon,
+.linkspot4 img  {
+    border-color:[[setting:linkspots4colour]];
+}
+.linkspot4 h4 {
+    color:[[setting:linkspots4colour]];
+}
+.linkspot5 .linkspots-block,
+.linkspot5 .linkspots-icon,
+.linkspot5 img  {
+    border-color:[[setting:linkspots5colour]];
+}
+.linkspot5 h4 {
+    color:[[setting:linkspots5colour]];
+}
+.linkspot6 .linkspots-block,
+.linkspot6 .linkspots-icon,
+.linkspot6 img  {
+    border-color:[[setting:linkspots6colour]];
+}
+.linkspot6 h4 {
+    color:[[setting:linkspots6colour]];
+}
+
+
+/* Hiding content presemester
+ * -------------------------- */
+.hiddenpresemester #page {display:none;}
+.hiddenpresemester.editing #page {display:block;}
+.showforsemester .contenthiddenmessage {display:none;}
+#page-my-index.pagelayout-mydashboard .coursebox.hiddenpresemester {
+    opacity:0.4;
+    background:#e2e2e2;
+}
+#page-my-index.pagelayout-mydashboard .coursebox.hiddenpresemester:before {
+    font-size:85%;
+    font-weight:700;
+    color:#991401;
+    font-family:FontAwesome,'Open Sans','Arial';
+    content:'\f070  This content of this module is currently hidden until the relevant semester starts';
+}
+
+/* Custom CSS Settings
+-------------------------*/
+[[setting:customcss]]

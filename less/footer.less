@@ -1,0 +1,71 @@
+// This file is part of Moodle - http://moodle.org/
+//
+// Moodle is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// Moodle is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY, without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+
+/**
+ * Theme glostest theme styles less file.
+ *
+ * @package    theme_glostest
+ * @copyright  2016 RM Oelmann, University of Gloucestershire (roelmann@glos.ac.uk)
+ * @credits    Bas Brands - Bootstrap
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+
+/* Main footer section.
+ * -------------------- */
+#page-footer {
+    background-image:url([[pix:theme|colourbars]]);
+    background-repeat: repeat-x;
+    background-color:@brand-stripe-gold;
+    color:@white;
+    text-align:left;
+    padding-left:16px;
+    .socialwrapper {
+        clear:both;
+        &:after {
+            clear:both;
+        }
+        .social {
+            float:left;
+            width:60%;
+            i {
+                color:@brand-stripe-gold;
+                background-color:@white;
+                height:40px;
+                width:40px;
+                text-align:center;
+                padding-top:8px;
+            }
+        }
+        .lts {
+            float:right;
+            padding-right:30px;
+            width:40%;
+            img {
+                float:right;
+                margin-right:5px;
+                width:40px;
+                height:40px;
+            }
+            p {
+                float:right;
+            }
+        }
+        .maintenance {
+            clear:both;
+            width:100%;
+            margin-top:10px;
+        }
+    }
+}
