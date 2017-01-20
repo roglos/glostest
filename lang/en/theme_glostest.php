@@ -126,3 +126,63 @@ $string['dontdisplay'] = 'Never show';
 $string['captiontextcolour'] = 'Link Spot colour';
 $string['captiontextcolourdesc'] = 'Colour for the Link spot text, icon and borders.';
 
+
+// Course Image rendering.
+$string['frontpagecoursesettings'] = 'Course Images';
+$string['frontpagesettingsheading'] = 'Using Course Images';
+$string['frontpagedesc'] = 'Configure the way that the images are used for course tiles on the frontpage and as course images on the course pages.';
+$string['coursetileimagesinfo'] = 'Front Page Course Tile Images';
+$string['coursetileimagesinfodesc'] = 'Settings for Front Page course tile images';
+$string['frontpagerenderer'] = 'Frontpage Course Boxes';
+$string['frontpagerendererdesc'] = 'Control the way that the course boxes on the front page are rendered, with or without the overlay.';
+$string['frontpagerendereroption1'] = 'Tiles';
+$string['frontpagerendereroption2'] = 'Tiles w/ overlay';
+$string['rendereroverlaycolour'] = 'Overlay colour';
+$string['rendereroverlaycolourdesc'] = 'The colour of the overlay, when the "Tiles w/ overlay" renderer is selected.';
+$string['rendereroverlayfontcolour'] = 'Overlay font colour';
+$string['rendereroverlayfontcolourdesc'] = 'The colour of the font, when hovering over a coursebox with "Tiles w/ overlay" renderer enabled.';
+$string['frontpagerendererdefaultimage'] = 'Default Front Page course tile image';
+$string['frontpagerendererdefaultimagedesc'] = 'The default image to be used for front page course tiles when no course image is found, (applies for Tiles w/ overlay)';
+$string['dashboardcoursetileinfo'] = 'Dashboard Coarse listing options';
+$string['dashboardcoursetileinfodesc'] = 'Settings for Dashboard course tiles. Note: the default image used for the front page course tiles with overlay is used when course tiles are displayed on the My Dashboard page, along with the overlay colours set for the front page course tiles options.';
+$string['dashboardrenderer'] = 'Dashboard Course Listing';
+$string['dashboardrendererdesc'] = 'Control the way that the course listing is rendered on the My Dashboard page - as a standard listing or as course tiles.';
+$string['dashboardrendereroption1'] = 'Course tiles';
+$string['dashboardrendereroption2'] = 'Default listing';
+$string['courseheaderdefaultimage'] = 'Default course header image';
+$string['courseheaderdefaultimagedesc'] = 'The default image to be used for course header images when no course image is found - if this is left empty, then only courses with a course image in the Course Summary files will have a heading image.';
+$string['courseimageheaderoption'] = 'Course Header Images';
+$string['courseimageheaderoptiondesc'] = 'Configure the way the images are used for course headers. Select no image, image as a header background or image as a separate image at the top of the course page.';
+$string['courseimageheaderoption1'] = 'Course image as a header banner';
+$string['courseimageheaderoption2'] = 'Course image as a separate image';
+$string['courseimageheaderoption3'] = 'No course header image';
+$string['coursepageimagesinfo'] = 'Course Page Images';
+$string['coursepageimagesinfodesc'] = 'Settings for Course Page header images';
+$string['courseheaderimageheight'] = 'Course Header image height';
+$string['courseheaderimageheightdesc'] = 'Set the height for any images used as header banners (recommended height 150-175px)<br>Note: If you set this to less than 125px, you may also need to alter the font-size on the course grade to bring it to a single line (add <code>.courseheadergradepercentage table tbody tr:last-of-type .column-itemname, .courseheadergradepercentage table tbody tr:last-of-type .column-percentage {font-size:120%;}</code> to your customcss.';
+$string['courseboxactivitynotice'] = 'Activity<br>Notices';
+
+// Promoted courses.
+$string['promotedtitledefault'] = 'Featured courses';
+$string['promotedtitledesc'] = 'Please give the Promoted courses block title,
+either language key or Text.For ex: lang:display or Display';
+$string['pcourseenable'] = 'Enable admin set promoted courses slider';
+$string['pcoursetagenable'] = 'Enable Tagged recommended courses slider';
+$string['pcoursemyenable'] = 'Enable My courses slider';
+
+$string['pcourses'] = 'Featured Courses';
+$string['pcoursesdesc'] = 'LIMIT=9 You cannot enter more than 9 course ids. Please give the featured courses id should separated by comma.';
+$string['promotedcoursesheading'] = 'Featured Courses Slider';
+$string['title'] = 'Title';
+$string['promotedlinktext'] = 'View More Courses Text';
+$string['promotedlinktext_desc'] = 'This provides an option to link to a course category to show more courses.  Enter a URL below.';
+$string['promotedlink'] = 'View More Courses URL';
+$string['promotedlink_desc'] = 'Enter a URL to one of your course catagories.  This is displayed next to the featured courses title.';
+$string['settingpromotedlinktext'] = 'View More Courses';
+$string['settingpromotedlink'] = $CFG->wwwroot.'/course/index.php?categoryid=1';
+$string['settingfeaturedslider'] = 'Featured Courses';
+
+$string['tagscoursestitle'] = 'Tagged courses recommended for you';
+$string['settingcoursestitle'] = 'Promoted courses';
+$string['mycoursestitle'] = 'My courses';
+$string['promotedcourseslinkdefault'] = 'View all courses';

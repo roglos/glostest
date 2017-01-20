@@ -44,7 +44,7 @@
 </nav>
 <header class="moodleheader">
     <div class="container-fluid">
-        <a href="<?php echo $CFG->wwwroot ?>" class="logo">&nbsp;</a>
+        <a href="<?php echo $CFG->wwwroot ?>" class="logo" alt = "Logo Home link">&nbsp;</a>
         <?php echo $OUTPUT->page_heading(); ?>
     </div>
 </header>
@@ -52,7 +52,15 @@
 <header id="page-header" class="clearfix">
     <div id="page-navbar" class="clearfix">
         <?php echo $OUTPUT->navbar(); ?>
-        <div class="breadcrumb-button"><?php echo $OUTPUT->page_heading_button(); ?></div>
+        <?php $link = new moodle_url("/theme/glostest/pages/selfhelp.php"); ?>
+        <div class="self-help-button" style="float:right; padding:5px;">
+            <a href='<?php echo $link;?>' title="GlosMoodle Self-Help">
+                <i class="fa fa-3x fa-question-circle" style="color:#fff;"></i>
+            </a>
+        </div>
+        <div class="breadcrumb-button">
+            <?php echo $OUTPUT->page_heading_button(); ?>
+        </div>
     </div>
 
     <div id="course-header">

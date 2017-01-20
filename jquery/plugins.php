@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Theme glostest version file.
+ * Theme glostest lib file.
  *
  * @package    theme_glostest
  * @copyright  2016 RM Oelmann, University of Gloucestershire (roelmann@glos.ac.uk)
@@ -23,11 +23,9 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-defined('MOODLE_INTERNAL') || die;
 
-$plugin->version   = 2016112101;
-$plugin->requires  = 2016051900;
-$plugin->component = 'theme_glostest';
-$plugin->dependencies = array(
-    'theme_bootstrap'  => 2016080100,
+$plugins = array(
+    'slick' => array('files' => array('slick.js')),
+    'promo' => array('files' => array('promo.js')),
+
 );

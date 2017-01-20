@@ -24,6 +24,14 @@
  */
 
 require('lib/alertslib.php');
+require('lib/courseslib.php');
+
+function theme_glostest_page_init(moodle_page $page) {
+    $page->requires->jquery_plugin('slick', 'theme_glostest');
+    $page->requires->jquery_plugin('promo', 'theme_glostest');
+
+}
+
 
 function glostest_grid($hassidepre, $hassidepost, $hassidetop) {
     if ($hassidepre && $hassidepost) {
@@ -103,6 +111,12 @@ function theme_glostest_process_css($css, $theme) {
     $css = theme_glostest_set_linkspots5colour($css, $linkspots5colour);
     $linkspots6colour = theme_glostest_get_setting('linkspots6colour');
     $css = theme_glostest_set_linkspots6colour($css, $linkspots6colour);
+
+    $rendereroverlaycolour = theme_glostest_get_setting('rendereroverlaycolour');
+    $css = theme_glostest_set_rendereroverlaycolour($css, $rendereroverlaycolour);
+    $rendereroverlayfontcolour = theme_glostest_get_setting('rendereroverlayfontcolour');
+    $css = theme_glostest_set_rendereroverlayfontcolour($css, $rendereroverlayfontcolour);
+
 
     // Set custom CSS.
     if (!empty($theme->settings->customcss)) {
@@ -248,6 +262,44 @@ function theme_glostest_set_linkspots6colour($css, $linkspots6colour) {
     $replacement = $linkspots6colour;
     if (!($replacement)) {
         $replacement = '#0000ff';
+    }
+    $css = str_replace($tag, $replacement, $css);
+    return $css;
+}
+/**
+ * Set the overlay background colour for course tiles.
+ *
+ * @param string $css
+ * @param string $rendereroverlaycolour
+ * @param string $tag
+ * @param string $replacement
+ *
+ * @return string
+ */
+function theme_glostest_set_rendereroverlaycolour($css, $rendereroverlaycolour) {
+    $tag = '[[setting:rendereroverlaycolour]]';
+    $replacement = $rendereroverlaycolour;
+    if (is_null($replacement)) {
+        $replacement = '#001e3c';
+    }
+    $css = str_replace($tag, $replacement, $css);
+    return $css;
+}
+/**
+ * Set the overlay text colour for course tiles.
+ *
+ * @param string $css
+ * @param string $rendereroverlayfontcolour
+ * @param string $tag
+ * @param string $replacement
+ *
+ * @return string
+ */
+function theme_glostest_set_rendereroverlayfontcolour($css, $rendereroverlayfontcolour) {
+    $tag = '[[setting:rendereroverlayfontcolour]]';
+    $replacement = $rendereroverlayfontcolour;
+    if (is_null($replacement)) {
+        $replacement = '#FFF';
     }
     $css = str_replace($tag, $replacement, $css);
     return $css;

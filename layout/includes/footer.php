@@ -31,16 +31,21 @@
         Company Registration Number 06023243. VAT Number GB 886 1439 87.</p>
         <div class='socialwrapper'>
             <div class='social'>
-                <a href='http://www.facebook.com/uniofglos'><i class="fa fa-2x fa-facebook"></i></a>
-                <a href='http://www.twitter.com/uniofglos'><i class="fa fa-2x fa-twitter"></i></a>
-                <a href='http://www.linkedin.com/company/22278'><i class="fa fa-2x fa-linkedin"></i></a>
-                <a href='http://www.youtube.com/user/universityofglos/featured'><i class="fa fa-2x fa-youtube"></i></a>
-                <a href='https://www.flickr.com/photos/uniofglos'><i class="fa fa-2x fa-flickr"></i></a>
+                <a href='http://www.facebook.com/uniofglos' alt = 'Facebook'>
+                    <i class="fa fa-2x fa-facebook"></i></a>
+                <a href='http://www.twitter.com/uniofglos' alt = 'Twitter'>
+                    <i class="fa fa-2x fa-twitter"></i></a>
+                <a href='http://www.linkedin.com/company/22278' alt = 'Linkedin'>
+                    <i class="fa fa-2x fa-linkedin"></i></a>
+                <a href='http://www.youtube.com/user/universityofglos/featured' alt = 'YouTube'>
+                    <i class="fa fa-2x fa-youtube"></i></a>
+                <a href='https://www.flickr.com/photos/uniofglos' alt = 'Flikr'>
+                    <i class="fa fa-2x fa-flickr"></i></a>
             </div>
             <div class='lts'>
                 <p>Email: lts@glos.ac.uk<br>
                 Phone: (01242) 714440</p>
-                <img src="<?php echo $OUTPUT->pix_url('lts-logo', 'theme'); ?>" alt="" />
+                <img src="<?php echo $OUTPUT->pix_url('lts-logo', 'theme'); ?>" alt="LTS Logo" />
             </div>
             <div class='maintenance'>
                 <p>This site is maintained and operated by Learning Technology Support (LTS)</p>

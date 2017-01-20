@@ -27,7 +27,7 @@ require('includes/preheader.php');
 
 require('includes/header.php');
 
-require('includes/alerts.php');
+// require('includes/alerts.php');
 ?>
 
 
@@ -42,7 +42,16 @@ require('includes/alerts.php');
                 echo $OUTPUT->blocks('side-top', $regions['top']);
             }
 
+            global $USER;
+            profile_user_record($USER->id);
+            if ($USER->profile['overviewlayout'] == 'Slider') {
+
+                $courserenderer = $PAGE->get_renderer('core', 'course');
+                echo $courserenderer->promoted_courses('my');
+            }
+
             echo $OUTPUT->main_content();
+
             echo $OUTPUT->course_content_footer();
             ?>
         </div>
@@ -57,7 +66,10 @@ require('includes/alerts.php');
         }?>
 
     </div>
-    <?php require('includes/footer.php');?>
+    <?php
+
+        require('includes/footer.php');
+    ?>
 
     <?php echo $OUTPUT->standard_end_of_body_html() ?>
 

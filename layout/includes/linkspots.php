@@ -48,14 +48,16 @@ $colspan = "flexcontent";
 
         ?>
                 <div class="linkspots-wrapper <?php echo $class;?>">
-                    <a href="<?php echo $url;?>">
+                    <a href="<?php echo $url;?>" alt="<?php echo $title ?>">
 
                     <div class="linkspots-block">
-                        <img class='linkspotbkground' src="<?php echo $linkspotimage;?>">
+                        <img class='linkspotbkground' src="<?php echo $linkspotimage;?>"
+                            alt="link spot background image for <?php echo $title ?> link spot.">
                         <div class="linkspots-icon">
                             <?php
                             if ($linkspotcentralimage != '') {
-                                echo '<img class="linkspotcentral" src=' . $linkspotcentralimage . '>';
+                                echo '<img class="linkspotcentral" src=' . $linkspotcentralimage .
+                                ' alt="link spot central icon for <?php echo $title ?> link spot.">';
                             } else {
                                 echo '<i class="fa fa-3x fa-' . $icon . '"></i>';
                             }

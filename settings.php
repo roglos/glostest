@@ -33,3 +33,4 @@ defined('MOODLE_INTERNAL') || die;
     require('settings/carousel.php');
     require('settings/linkspots.php');
     require('settings/alerts.php');
+    require('settings/coursetiles.php');

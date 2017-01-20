@@ -94,6 +94,44 @@ body {
     content:'\f070  This content of this module is currently hidden until the relevant semester starts';
 }
 
+
+
+/* Course Box.
+ * ----------- */
+.coursebox.hover .summary,
+.block_uog_course_overview .coursebox:hover .summary {
+    color:[[setting:rendereroverlayfontcolour]] !important;
+}
+.coursebox.panel.hover .panel-body:hover .coursebox-content h3 a {
+    color:[[setting:rendereroverlayfontcolour]] !important;
+}
+.coursebox.hover .teachers li a,
+.coursebox.hover .summary > a:link,
+.coursebox.hover .summary > a:visited {
+    color:[[setting:rendereroverlayfontcolour]] !important;
+}
+.block_uog_course_overview .coursebox:hover .summary a {
+    color:[[setting:rendereroverlayfontcolour]] !important;
+    font-weight:700;
+}
+.block_uog_course_overview .coursebox .courseboxactivitynotice {
+    background:[[setting:rendereroverlaycolour]];
+    color:[[setting:rendereroverlayfontcolour]]
+}
+.coursebox.panel.hover .panel-body:hover,
+.block_uog_course_overview .coursebox:hover .summary {
+    background:[[setting:rendereroverlaycolour]] !important;
+    -webkit-transition:all .5s ease-in-out;
+    -moz-transition:all .5s ease-in-out;
+    -o-transition:all .5s ease-in-out;
+    transition:all .5s ease-in-out;
+}
+.coursebox.coursesimplelist {
+    margin-bottom:0;
+    padding-bottom:0;
+    padding-top:0;
+}
+
 /* Custom CSS Settings
 -------------------------*/
 [[setting:customcss]]

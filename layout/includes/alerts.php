@@ -43,7 +43,7 @@ if ($enable1alert || $enable2alert || $enable3alert) {
 if ($enable1alert) {
 ?>
     <div class="useralerts alert alert-<?php echo theme_glostest_get_setting('alert1type') ?>">
-        <a class="close" data-dismiss="alert" href="#"><i class="fa fa-times-circle"></i></a>
+        <a class="close" data-dismiss="alert" href="#" alt="Close button"><i class="fa fa-times-circle"></i></a>
         <?php
         $alert1icon = 'alert' . theme_glostest_get_setting('alert1type');
         if ('ltr' === get_string('thisdirection', 'langconfig')) {
@@ -65,7 +65,7 @@ if ($enable1alert) {
 if ($enable2alert) {
 ?>
     <div class="useralerts alert alert-<?php echo theme_glostest_get_setting('alert2type') ?>">
-        <a class="close" data-dismiss="alert" href="#"><i class="fa fa-times-circle"></i></a>
+        <a class="close" data-dismiss="alert" href="#" alt="Close button"><i class="fa fa-times-circle"></i></a>
         <?php
         $alert2icon = 'alert' . theme_glostest_get_setting('alert2type');
         if ('ltr' === get_string('thisdirection', 'langconfig')) {
@@ -87,7 +87,7 @@ if ($enable2alert) {
 if ($enable3alert) {
 ?>
     <div class="useralerts alert alert-<?php echo theme_glostest_get_setting('alert3type') ?>">
-        <a class="close" data-dismiss="alert" href="#"><i class="fa fa-times-circle"></i></a>
+        <a class="close" data-dismiss="alert" href="#" alt="Close button"><i class="fa fa-times-circle"></i></a>
         <?php
         $alert3icon = 'alert' . theme_glostest_get_setting('alert3type');
         if ('ltr' === get_string('thisdirection', 'langconfig')) {
