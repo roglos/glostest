@@ -132,6 +132,11 @@ body {
     padding-top:0;
 }
 
+/* Enrol modal.
+ * ------------ */
+.pagelayout-admin .modal.modal-dialog.show {
+    display: block !important;
+}
 /* Custom CSS Settings
 -------------------------*/
 [[setting:customcss]]

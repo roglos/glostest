@@ -31,9 +31,9 @@ require('includes/courseimage.php');
 
 global $COURSE;
 ?>
-<div class="contenthiddenmessage alert alert-warning">
-    <h2>This module content will be released just before the beginning of the semester it applies to</h2>
-    <p>Staff: You can view and edit the content by clicking the <span class="btn btn-success">Turn Editing On</span> button to the top right</p>
+<div class="contenthiddenmessage alert alert-danger">
+    <h3>This module content will be released to students just before the beginning of the semester it applies to</h3>
+    <p>Staff have full access to the module, including switching role to student view (from the drop down when clicking on your name/icon in the top right)</p>
 </div>
 
 <div id="page" class="container-fluid">

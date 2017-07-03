@@ -23,7 +23,7 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-global $PAGE, $COURSE;
+global $PAGE, $COURSE, $USER;
 
 $hassidepre = $PAGE->blocks->region_has_content('side-pre', $OUTPUT);
 $hassidepost = $PAGE->blocks->region_has_content('side-post', $OUTPUT);
@@ -43,8 +43,12 @@ $PAGE->set_popup_notification_allowed(false);
 
 $bodyclasses = array();
 $bodyclasses[] = date("Md");
+
 if ($PAGE->pagelayout == 'course' OR $PAGE->pagelayout == 'incourse') {
-    if (isset($COURSE->startdate) && time() < ($COURSE->startdate - (60*60*24*7)) ) {
+    $coursecontext = context_course::instance($COURSE->id);
+    if (substr($USER->email,-11) === '@glos.ac.uk') {
+        $bodyclasses[] = 'staffview';
+    } elseif (isset($COURSE->startdate) && time() < ($COURSE->startdate - (60*60*24*7)) ) {
         $bodyclasses[] = 'hiddenpresemester';
     } else {
         $bodyclasses[] = 'showforsemester';
