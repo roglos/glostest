@@ -46,14 +46,16 @@ $bodyclasses[] = date("Md");
 
 if ($PAGE->pagelayout == 'course' OR $PAGE->pagelayout == 'incourse') {
     $coursecontext = context_course::instance($COURSE->id);
-    if (substr($USER->email,-11) === '@glos.ac.uk') {
+    if (substr($USER->email,-11) === '@glos.ac.uk' && isset($COURSE->startdate) && time() < ($COURSE->startdate - (60*60*$
         $bodyclasses[] = 'staffview';
-    } elseif (isset($COURSE->startdate) && time() < ($COURSE->startdate - (60*60*24*7)) ) {
+    }
+    if (isset($COURSE->startdate) && time() < ($COURSE->startdate - (60*60*24*7)) ) {
         $bodyclasses[] = 'hiddenpresemester';
     } else {
         $bodyclasses[] = 'showforsemester';
     }
 }
+                                                                                                                   
 echo $OUTPUT->doctype() ?>
 <html <?php echo $OUTPUT->htmlattributes(); ?>>
 <head>
