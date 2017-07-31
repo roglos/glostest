@@ -30,8 +30,8 @@ $temp->add(new admin_setting_heading('theme_glostest_generalheading', get_string
 
 // Custom LESS file.
 $name = 'theme_glostest/customless';
-$title = get_string('customless', 'theme_flexibase');
-$description = get_string('customlessdesc', 'theme_flexibase');
+$title = get_string('customless', 'theme_glostest');
+$description = get_string('customlessdesc', 'theme_glostest');
 $default = '';
 $setting = new admin_setting_configtextarea($name, $title, $description, $default);
 $setting->set_updatedcallback('theme_reset_all_caches');

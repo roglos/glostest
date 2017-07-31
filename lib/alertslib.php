@@ -17,7 +17,7 @@
 /**
  * Theme Flexibase config file.
  *
- * @package    theme_flexibase
+ * @package    theme_glostest
  * @author     2015 Richard Oelmann
  * @copyright  2015 R. Oelmann
  * @copyright  Bootstrap - 2014 Bas Brands
